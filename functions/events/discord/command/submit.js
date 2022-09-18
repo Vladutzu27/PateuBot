@@ -1,3 +1,5 @@
+//does not work: if you know how to fix it, submit a pull request, would be much apreciated
+
 const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
 const event = context.params.event;
 
