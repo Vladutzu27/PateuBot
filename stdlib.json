@@ -1,0 +1,34 @@
+{
+  "name": "ghiocel/pateubot",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/discord/bot_mention.js": {
+      "name": "discord.bot_mention"
+    },
+    "functions/events/discord/command/brainly.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "brainly"
+      }
+    },
+    "functions/events/discord/message/create.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/command/submit.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "submit"
+      }
+    },
+    "functions/events/discord/command/tema.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "tema"
+      }
+    },
+    "functions/events/discord/bot/message/create.js": {
+      "name": "discord.bot.message.create"
+    }
+  }
+}
