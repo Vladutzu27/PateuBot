@@ -1,5 +1,3 @@
-//this one doesn't work
-
 module.exports = async (event, context) => {
   const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
 
@@ -7,7 +5,7 @@ module.exports = async (event, context) => {
 
   const username = `${context.params.event.author.username}`;
 
-  const BANNED_WORDS = [`că c`, `ca c`, `ka c`, `ka k` `că k`, `ca k`, `cac`]; // Add banned words
+  const BANNED_WORDS = [`că c`, `ca c`, `ka c`, `ka k`, `că k`, `ca k`, `cac`]; // Add banned words
 
   const regEx = new RegExp(BANNED_WORDS.join('|'), 'gi');
 
